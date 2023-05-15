@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Nouvelle recommandation</title>
-</head>
-<body>
-    <h2>Partage une nouvelle recommandation</h2>
-    <form method="post" action="<?php echo site_url('formcontroller/process'); ?>">
-        <label for="titLe">Titre</label>
-        <input type="text" name="title" required>
 
-        <label for="description">Description</label>
-        <input type="text" name="description" required>
+<h2>Partage une nouvelle recommandation</h2>
 
-        <label for="address">Adresse</label>
-        <input type="text" name="address" required>
+<form method="post" action="/task">
+    <div class="row mb-3">
+    <label for="titLe" class="col-sm-1 col-form-label">Titre</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-field" name="title" required>
+    </div>
+</div>
 
-        <label for="author">Auteur</label>
-        <input type="text" name="author" required>
+<div class="row mb-3">
+    <label for="description" class="col-sm-1 col-form-label">Description</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-field" name="description" required>
+    </div>
+</div>
 
-        <input type="submit" value="Je partage">
-    </form>
+<div class="row mb-3">
+    <label for="address" class="col-sm-1 col-form-label">Adresse</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-field" name="address" required>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <label for="author" class="col-sm-1 col-form-label">Auteur</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-field" name="author" required>
+    </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Je partage</button>
+
+</form>
 </body>
 </html>
