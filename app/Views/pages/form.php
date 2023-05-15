@@ -31,6 +31,11 @@
     </div>
 </div>
 
+<div class="mb-3">
+  <label for="picture" class="col-sm-1 col-form-label">Photo</label>
+  <input class="form-field" type="file" id="picture">
+</div>
+
 <button type="submit" class="btn btn-primary">Je partage</button>
 
 </form>
