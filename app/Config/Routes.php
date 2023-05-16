@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 //$routes->get('/index', 'RecommendationsController::index');
 $routes->get('/recommendations(:num)', 'RecommendationsController::recommendations/$1');
+$routes->get('/form', 'FormController::form');
 
 /*
  * --------------------------------------------------------------------
