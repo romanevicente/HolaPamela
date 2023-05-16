@@ -20,5 +20,11 @@
 
         <input type="submit" value="Je partage">
     </form>
+
+    <ul>
+        <?php foreach ($categories as $category): ?>
+            <li><?php echo $category; ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
