@@ -2,7 +2,7 @@
 
 <h2>Partage une nouvelle recommandation</h2>
 
-<form method="post" action="/task">
+<form method="post" action="/form">
     <div class="row mb-3">
     <label for="titLe" class="col-sm-1 col-form-label">Titre</label>
     <div class="col-sm-10">
@@ -33,7 +33,7 @@
 
 <div class="mb-3">
   <label for="picture" class="col-sm-1 col-form-label">Photo</label>
-  <input class="form-field" type="file" id="picture">
+  <input class="form-field" type="file" name="picture" required>
 </div>
 
 <button type="submit" class="btn btn-primary">Je partage</button>
