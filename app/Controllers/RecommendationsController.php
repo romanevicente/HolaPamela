@@ -37,20 +37,22 @@ class RecommendationsController extends BaseController
         $recommendation = $recommendationModel->find($id);
 
         $data = [
+            "id" => $id,
             "title" => $recommendation["title"],
             "address" => $recommendation["address"],
             "description" => $recommendation["description"],
             "picture" => $recommendation['picture']
         ];
 
-        return view("recommendations/edit", $data);
+        return view("pages/edit", $data);
     }
 
     public function update($id)
     {
-        $params = $this->request->getPost();
+        $recommendation = $this->request->getPost();
         
         $data = [
+           "id" => $id,
             "title" => $recommendation["title"],
             "address" => $recommendation["address"],
             "description" => $recommendation["description"],
@@ -58,7 +60,7 @@ class RecommendationsController extends BaseController
         ];
 
         $recommendationModel = new RecommendationsModel();
-        $recommenationModel->update($id, $data);
+        $recommendationModel->update($id, $data);
 
         return redirect()->route("RecommendationsController::show/$1", [$id]);
     }
