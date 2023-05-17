@@ -17,6 +17,11 @@ class RecommendationsController extends BaseController
     {
         $recommendationsModel = new RecommendationsModel();
         $recommendation = $recommendationsModel->find($id);
+        $db = \Config\Database::connect();
+        $builder = $db->table('recommendations');
+        $builder->select('*, recommendations.title AS recommendationsTitle, categories.title AS categoryTitle');
+        $builder->join('categories', 'recommendations.category_id = categories.id');
+        $recommendation = $builder->get()->getResultArray();
 
         // $recommendation = $recommendationsModel->join('categories', 'categories.id = recommendations.category_id')
         // ->find($id);
