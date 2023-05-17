@@ -17,14 +17,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-
-
         <?php foreach($categoriesList as $categorie): ?>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?=$categorie["title"]?></a>
+            <li class="nav-item" >
+              <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?></a>
             </li>
         <?php endforeach ?>
-
       </ul>
     </div>
   </nav>

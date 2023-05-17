@@ -4,13 +4,21 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\RecommendationsModel;
+use App\Models\CategoriesModel;
 
 class FormController extends BaseController
 {
     public function new()
     {
+        $categoriesModel = new CategoriesModel();
+        $categoriesList = $categoriesModel->findAll();
+
+        $data = [
+            "categoriesList" => $categoriesList
+        ];
+
         return
-            view('templates/header').
+            view('templates/header', $data).
             view("pages/form").
             view('templates/footer');
     }
