@@ -25,6 +25,6 @@ name="picture"
 placeholder="Photo" 
 value="<?= $picture ?>"
       />
-    <input type="submit" />
+    <input type="submit">Je valide mes modifications</input>
 </form>
 

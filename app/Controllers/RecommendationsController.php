@@ -21,6 +21,7 @@ class RecommendationsController extends BaseController
         // $recommendation = $recommendationsModel->join('categories', 'categories.id = recommendations.category_id')
         // ->find($id);
         $data = [
+            "id" => $id,
             "title" => $recommendation["title"],
             "address" => $recommendation["address"],
             "description" => $recommendation["description"],
@@ -52,7 +53,7 @@ class RecommendationsController extends BaseController
         $recommendation = $this->request->getPost();
         
         $data = [
-           "id" => $id,
+            "id" => $id,
             "title" => $recommendation["title"],
             "address" => $recommendation["address"],
             "description" => $recommendation["description"],
