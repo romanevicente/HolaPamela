@@ -46,4 +46,13 @@ class RecommendationsController extends BaseController
         return redirect()->route("RecommendationsController::show/$1", [$id]);
     }
 
+    public function delete($id)
+    {
+        $recommendationModel = new RecommendationsModel();
+        $recommendationModel->delete($id);
+
+        return redirect("recommendations");
+    }
+
+
 }
