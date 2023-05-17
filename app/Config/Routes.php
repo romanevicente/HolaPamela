@@ -31,10 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 //$routes->get('/index', 'RecommendationsController::index');
-$routes->get('/recommendations/(:num)', 'RecommendationsController::recommendations/$1');
+//$routes->get('/recommendations/(:num)', 'RecommendationsController::recommendations/$1');
 $routes->get('/form', 'FormController::new');
 $routes->post('/form', 'FormController::create');
-$routes->get('recommendations(:num)/edit', 'RecommendationsController::edit/$1');
+$routes->get('/recommendations/(:num)', 'RecommendationsController::show/$1');
+$routes->get('/recommendations/(:num)/edit', 'RecommendationsController::edit/$1');
 $routes->get('/cat/(:num)', 'CategoriesController::cat/$1');
 
 

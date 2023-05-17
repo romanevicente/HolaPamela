@@ -4,8 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\RecommendationsModel;
-
-$this->load->database();
+use App\Models\CategoriesModel;
 
 class RecommendationsController extends BaseController
 {
@@ -14,6 +13,19 @@ class RecommendationsController extends BaseController
         return view("recommendations/index");
     }
 
+    public function show($id)
+    {
+        $recommendationsModel = new RecommendationsModel();
+        $recommendation = $recommendationsModel->find($id);
+
+        $data = [
+            "title" => $recommendation["title"],
+            "description" => $recommendation["description"]
+        ];
+
+        return view("pages/recommendation", $data);
+
+    }
     public function edit($id)
     {
         $recommendationModel = new RecommendationsModel();
