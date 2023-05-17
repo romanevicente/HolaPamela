@@ -36,6 +36,8 @@ $routes->get('/form', 'FormController::new');
 $routes->post('/form', 'FormController::create');
 $routes->get('/recommendations/(:num)', 'RecommendationsController::show/$1');
 $routes->get('/recommendations/(:num)/edit', 'RecommendationsController::edit/$1');
+$routes->patch('/recommendations/(:num)', 'RecommendationsController::update/$1');
+$routes->delete('/recommendations/(:num)', 'RecommendationsController::delete/$1');
 $routes->get('/cat/(:num)', 'CategoriesController::cat/$1');
 
 
