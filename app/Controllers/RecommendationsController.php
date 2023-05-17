@@ -18,9 +18,14 @@ class RecommendationsController extends BaseController
         $recommendationsModel = new RecommendationsModel();
         $recommendation = $recommendationsModel->find($id);
 
+        // $recommendation = $recommendationsModel->join('categories', 'categories.id = recommendations.category_id')
+        // ->find($id);
         $data = [
             "title" => $recommendation["title"],
-            "description" => $recommendation["description"]
+            "address" => $recommendation["address"],
+            "description" => $recommendation["description"],
+            "author" => $recommendation["author"],
+            "picture" => $recommendation["picture"]
         ];
 
         return view("pages/recommendation", $data);

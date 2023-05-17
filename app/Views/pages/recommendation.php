@@ -1,5 +1,5 @@
-<p class="nav-link" href="#"><?=$recommendation["title"]?></p>
-<p class="nav-link" href="#"><?=$recommendation["address"]?></p>
-<p class="nav-link" href="#"><?=$recommendation["description"]?></p>
-<p class="nav-link" href="#"><?=$recommendation["author"]?></p>
-<img src="<?=$recommendation["picture"]?>">    
+<p><?= $title ?></p>
+<p><?= $address ?></p>
+<p><?= $description ?></p>
+<p><?= $author ?></p>
+<img src="<?=$picture?>">  
