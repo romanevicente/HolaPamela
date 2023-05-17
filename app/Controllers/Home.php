@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\CategoriesModel;
+use App\Models\RecommendationsModel;
 
 class Home extends BaseController
 {
@@ -12,13 +13,23 @@ class Home extends BaseController
         $categoriesModel = new CategoriesModel();
         $categoriesList = $categoriesModel->findAll();
 
+
+        $recommendationsModel = new RecommendationsModel();
+        $recommendationsList = $recommendationsModel->orderBy('id', 'desc')
+                                                    ->limit(5)
+                                                    ->findAll();
+
         $data = [
             "categoriesList" => $categoriesList
         ];
 
+        $data2 = [
+            "recommendationsList" => $recommendationsList
+        ];
+
         return 
             view('templates/header', $data).
-            view("pages/index").
+            view("pages/index", $data2).
             view('templates/footer');
     }
 }
