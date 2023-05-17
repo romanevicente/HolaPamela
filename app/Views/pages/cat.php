@@ -1,7 +1,4 @@
-<h1>page d'accueil</h1>
-
-
-<?php foreach($recommendationsList as $recommendation): ?>
+<?php foreach($recommandationList as $recommendation): ?>
               <p class="nav-link" href="#"><?=$recommendation["title"]?></p>
               <p class="nav-link" href="#"><?=$recommendation["address"]?></p>
               <p class="nav-link" href="#"><?=$recommendation["description"]?></p>
