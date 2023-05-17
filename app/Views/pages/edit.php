@@ -9,7 +9,7 @@ value="<?= $title ?>"
      />
     <input 
 type="text" 
-name="adress" 
+name="address" 
 placeholder="Adresse" 
 value="<?= $address ?>"
       />
@@ -21,15 +21,9 @@ value="<?= $description ?>"
      />
     <input 
 type="" 
-name="pitcure" 
+name="picture" 
 placeholder="Photo" 
 value="<?= $picture ?>"
-      />
-      <input 
-type="text" 
-name="author" 
-placeholder="Auteur" 
-value="<?= $author ?>"
       />
     <input type="submit" />
 </form>
