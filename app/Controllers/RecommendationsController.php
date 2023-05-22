@@ -34,9 +34,58 @@ class RecommendationsController extends BaseController
             "picture" => $recommendation["picture"]
         ];
 
+
+
         return view("pages/recommendation", $data);
 
     }
+
+    public function new()
+    {
+        $categoriesModel = new CategoriesModel();
+        $categoriesList = $categoriesModel->findAll();
+
+        $data = [
+            "categoriesList" => $categoriesList
+        ];
+
+        // $recommendationModel = new RecommendationsModel();
+        // $recommendationList = $recommendationModel->findAll();
+
+        // $data2 = [
+        //     "recommendationList" => $recommendationList
+        // ];
+
+        return
+            view('templates/header', $data).
+            view("pages/form", $data).
+            view('templates/footer');
+    }
+
+    public function create()
+    {
+        $params = $this->request->getPost();
+        $title = $params['title'];
+        $address = $params['address'];
+        $description = $params['description'];
+        $author = $params['author'];
+        $picture = $params['picture'];
+        // $category_id = $params['category_id'];
+        $recommendationModel = new RecommendationsModel();
+
+        $newRecommendation = [
+            'title' => $title,
+            'address' => $address,
+            'description' => $description,
+            'author' => $author,
+            'picture' => $picture,
+            // 'category_id' => $category_id,
+        ];
+        $recommendationModel->insert($newRecommendation);
+        return redirect('index');
+    }
+
+
     public function edit($id)
     {
         $recommendationModel = new RecommendationsModel();
