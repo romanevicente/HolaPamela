@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Partage une nouvelle recommandation</title>
-  <link rel="background" href="public/css/components/form.css">
 </head>
 <body>
 
