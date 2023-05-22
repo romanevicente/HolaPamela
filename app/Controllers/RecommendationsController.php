@@ -21,17 +21,18 @@ class RecommendationsController extends BaseController
         $builder = $db->table('recommendations');
         $builder->select('*, recommendations.title AS recommendationsTitle, categories.title AS categoryTitle');
         $builder->join('categories', 'recommendations.category_id = categories.id');
+        $builder->where('recommendations.id', $id);
         $recommendation = $builder->get()->getResultArray();
 
         // $recommendation = $recommendationsModel->join('categories', 'categories.id = recommendations.category_id')
         // ->find($id);
         $data = [
             "id" => $id,
-            "title" => $recommendation["title"],
-            "address" => $recommendation["address"],
-            "description" => $recommendation["description"],
-            "author" => $recommendation["author"],
-            "picture" => $recommendation["picture"]
+            "title" => $recommendation[0]["recommendationsTitle"],
+            "address" => $recommendation[0]["address"],
+            "description" => $recommendation[0]["description"],
+            "author" => $recommendation[0]["author"],
+            "picture" => $recommendation[0]["picture"]
         ];
 
 
