@@ -23,5 +23,8 @@
             </li>
         <?php endforeach ?>
       </ul>
+      <li class="nav-item" >
+        <a class="btn btn-primary" href="/form" role="button">J'ai une recommandation</a>
+      </li> 
     </div>
   </nav>
