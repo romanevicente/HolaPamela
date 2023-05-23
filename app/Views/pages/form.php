@@ -10,6 +10,17 @@
     </div>
 </div>
 
+<div class="input-group mb-3">
+<label for="categorie" class="col-sm-1 col-form-label">Catégorie</label>
+  <select class="form-select">
+  <option selected>Choisissez...</option>
+        <?php foreach($categoriesList as $categorie): ?>
+            <option value="7"><?=$categorie["title"]?></option>
+        <?php endforeach ?>
+
+  </select>
+</div>
+
 <div class="row mb-3">
     <label for="description" class="col-sm-1 col-form-label">Description</label>
     <div class="col-sm-10">
