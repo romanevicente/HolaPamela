@@ -2,74 +2,60 @@
 <html>
 <head>
   <title>Partage une nouvelle recommandation</title>
+  <!-- Ajouter les liens vers les fichiers CSS Bootstrap ici -->
 </head>
 <body>
-    
-    <h2>Partage une nouvelle recommandation</h2>
-    
-    <div class="container pt-5">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-6 col-lg-4">
-        <form method="post" action="/form">
-        <div class="row mb-3">
-            <label for="title" class="col-sm-2 col-form-label">Titre</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" name="title" required>
-            </div>
+
+<h2>Partage une nouvelle recommandation</h2>
+
+<div class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <form method="post" action="/form">
+
+        <div class="mb-3">
+          <label for="title" class="form-label">Titre</label>
+          <input type="text" class="form-control" id="title" name="title" required>
         </div>
 
-        <div class="row mb-3">
-          <label for="categorie" class="col-sm-2 col-form-label">Catégorie</label>
-          <div class="col-sm-10">
-              <select class="form-select" name="categorie">
-                  <option selected>Choisissez...</option>
+        <div class="mb-3">
+          <label for="categorie" class="form-label">Catégorie</label>
+          <select class="form-select" id="categorie" name="categorie" required>
+            <option selected>Choisissez...</option>
                   <?php foreach($categoriesList as $categorie): ?>
                 <option value="7"><?=$categorie["title"]?></option>
               <?php endforeach ?>
-            </select>
-          </div>
+              </select>
         </div>
 
-        <div class="row mb-3">
-          <label for="description" class="col-sm-2 col-form-label">Description</label>
-          <div class="col-sm-10">
-              <textarea class="form-control" name="description" rows="3" required></textarea>
-            </div>
-        </div>
-        
-        <div class="row mb-3">
-            <label for="address" class="col-sm-2 col-form-label">Adresse</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" name="address" required>
-        </div>
-    </div>
-    
-    <div class="row mb-3">
-        <label for="author" class="col-sm-2 col-form-label">Auteur</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" name="author" required>
-        </div>
-    </div>
-    
-        <div class="row mb-3">
-            <label for="picture" class="col-sm-2 col-form-label">Photo</label>
-          <div class="col-sm-10">
-              <input type="file" class="form-control" name="picture" required>
-            </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="address" name="address" required>
         </div>
 
-        <div class="row">
-            <div class="col-sm-10 offset-sm-2">
-                <button type="submit" class="btn btn-primary">Je partage</button>
-            </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description" name="description" rows="3" required>
         </div>
-    </form>
+
+        <div class="mb-3">
+          <label for="photo" class="form-label">Photo</label>
+          <input type="file" class="form-control" id="photo" name="photo" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="author" class="form-label">Auteur</label>
+          <input type="text" class="form-control" id="author" name="author" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Je partage</button>
+
+      </form>
     </div>
+  </div>
 </div>
-</div>
+
+<!-- Ajouter les liens vers les fichiers JavaScript Bootstrap ici -->
 
 </body>
 </html>
-
-
-<!-- 
