@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Partage une nouvelle recommandation</title>
-  <!-- Ajouter les liens vers les fichiers CSS Bootstrap ici -->
 </head>
 <body>
 
@@ -33,9 +32,9 @@
           <input type="text" class="form-control" id="address" name="address" required>
         </div>
 
-        <div class="mb-3">
+        <div class="style-description mb-3">
           <label for="description" class="form-label">Description</label>
-          <input type="text" class="form-control" id="description" name="description" rows="3" required>
+          <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
         </div>
 
         <div class="mb-3">
