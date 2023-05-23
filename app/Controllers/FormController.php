@@ -42,7 +42,7 @@ class FormController extends BaseController
             // 'category_id' => $category_id,
         ];
         $recommendationModel->insert($newRecommendation);
-        return redirect('index');
+        return redirect('/');
     }
 
 }
