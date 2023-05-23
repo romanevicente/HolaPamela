@@ -1,10 +1,24 @@
 .recommendation-title {
-    height: 150px;
     border-radius: 1px;
     color: orange;
     font-weight: bolder;
 }
 
+.img{
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
 
 .card {
     background-size: cover;
@@ -25,7 +39,7 @@
   .cards{
     display:grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:3px;
+    grid-gap:1px;
   }
   
   @media(max-width: 992px) {
@@ -46,5 +60,15 @@
   
   .cards-container .cards {
     flex-grow: 1;
-    padding: 16px;
+    padding: 10px;
   }
+
+  span {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+
+  .col {
+    flex: 1 0 0%;
+    margin-bottom: 25px;
+}
