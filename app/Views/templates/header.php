@@ -29,7 +29,8 @@
       <ul class="navbar-nav ">
         <?php foreach($categoriesList as $categorie): ?>
             <li class="nav-item" >
-              <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?></a>
+              <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?></a> 
+            <img src="/public/pictures/cat<?=$categorie["id"]?>.png" width="30" height="30">
             </li>
         <?php endforeach ?>
       </ul>

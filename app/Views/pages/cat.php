@@ -7,8 +7,7 @@
   <br>
       <span class="nav-link" href="#"><?=$recommendation["address"]?></span>
       <span class="nav-link" href="#"><?=$recommendation["description"]?></span>
-      <span class="nav-link" href="#"><?=$recommendation["author"]?></span>
-      <img src="<?=$recommendation["picture"]?>">     
+      <span class="nav-link" href="#"><?=$recommendation["author"]?></span>  
       <a href="/recommendations/<?=$recommendation["id"]?>" class="button">Voir plus</a>
       <?php endforeach ?>
 </div>
