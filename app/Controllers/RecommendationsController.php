@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\RecommendationsModel;
 use App\Models\CategoriesModel;
+use Cloudinary\Api\Upload\UploadApi;
 
 class RecommendationsController extends BaseController
 {
@@ -15,6 +16,13 @@ class RecommendationsController extends BaseController
 
     public function show($id)
     {
+        $categoriesModel = new CategoriesModel();
+        $categoriesList = $categoriesModel->findAll();
+
+        $data = [
+            "categoriesList" => $categoriesList
+        ];
+
         $recommendationsModel = new RecommendationsModel();
         $recommendation = $recommendationsModel->find($id);
         $db = \Config\Database::connect();
@@ -26,7 +34,7 @@ class RecommendationsController extends BaseController
 
         // $recommendation = $recommendationsModel->join('categories', 'categories.id = recommendations.category_id')
         // ->find($id);
-        $data = [
+        $data2 = [
             "id" => $id,
             "title" => $recommendation[0]["recommendationsTitle"],
             "address" => $recommendation[0]["address"],
@@ -37,7 +45,9 @@ class RecommendationsController extends BaseController
 
 
 
-        return view("pages/recommendation", $data);
+        return view('templates/header', $data).
+               view("pages/recommendation", $data2).
+               view('templates/footer');
 
     }
 
@@ -57,6 +67,7 @@ class RecommendationsController extends BaseController
         //     "recommendationList" => $recommendationList
         // ];
 
+
         return
             view('templates/header', $data).
             view("pages/form", $data).
@@ -66,22 +77,41 @@ class RecommendationsController extends BaseController
     public function create()
     {
         $params = $this->request->getPost();
+        $picture = $this->request->getFile("picture");
+ 
+
         $title = $params['title'];
         $address = $params['address'];
         $description = $params['description'];
         $author = $params['author'];
-        $picture = $params['picture'];
-        // $category_id = $params['category_id'];
+        // $picture = $params['picture'];
+        $category_id = $params['category'];
+       // d($category);
         $recommendationModel = new RecommendationsModel();
+        
+        // $categoriesModel = new CategoriesModel();
+        // $category_datas = $categoriesModel->where('title', $category)->find();
+        // $category_id = $category_datas['id'];
+        // $data = [
+        //     "categoriesList" => $categoriesList
+        // ];
 
         $newRecommendation = [
             'title' => $title,
             'address' => $address,
             'description' => $description,
             'author' => $author,
-            'picture' => $picture,
-            // 'category_id' => $category_id,
+            // 'picture' => $picture,
+            'category_id' => $category_id,
         ];
+
+        if ($picture->isValid()) { 	
+            $uploadApi = new UploadApi(); 	
+            $res = $uploadApi->upload($picture->getTempName(), ['folder' => 'upload']); 	 	
+            $url = $res["secure_url"]; 	 	
+            $newRecommendation["picture"] = $url; 	
+        }
+
         $recommendationModel->insert($newRecommendation);
         return redirect('/');
     }
@@ -131,3 +161,5 @@ class RecommendationsController extends BaseController
 
 
 }
+
+

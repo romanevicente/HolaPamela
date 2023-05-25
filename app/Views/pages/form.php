@@ -7,22 +7,22 @@
 
 <h2>Partage une nouvelle recommandation</h2>
 
-<div class="container pt-5">
+<div class="container pt-5 form-background ">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
-      <form method="post" action="/form">
+      <form method="post" action="/form" enctype="multipart/form-data" >
 
         <div class="mb-3">
-          <label for="title" class="form-label">Titre</label>
+          <label for="title" class="form-label font-title">Titre</label>
           <input type="text" class="form-control" id="title" name="title" required>
         </div>
 
         <div class="mb-3">
-          <label for="categorie" class="form-label">Catégorie</label>
-          <select class="form-select" id="categorie" name="categorie" required>
+          <label for="category" class="form-label">Catégorie</label>
+          <select class="form-select" id="category" name="category" required>
             <option selected>Choisissez...</option>
                   <?php foreach($categoriesList as $categorie): ?>
-                <option value="7"><?=$categorie["title"]?></option>
+                <option value="<?=$categorie["id"]?>"><?=$categorie["title"]?></option>
               <?php endforeach ?>
               </select>
         </div>
@@ -38,8 +38,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="photo" class="form-label">Photo</label>
-          <input type="file" class="form-control" id="photo" name="photo" required>
+          <label for="picture" class="form-label">Photo</label>
+          <input type="file" class="form-control" id="picture" name="picture" required>
         </div>
 
         <div class="mb-3">
