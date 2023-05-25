@@ -32,7 +32,6 @@
             <li class="nav-item" >
               <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?></a>
             </li>
-            <i class="fa-solid fa-utensils"></i>
         <?php endforeach ?>
       </ul>
       <li class="nav-item ml-auto" >
