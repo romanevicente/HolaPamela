@@ -67,6 +67,7 @@ class RecommendationsController extends BaseController
         //     "recommendationList" => $recommendationList
         // ];
 
+
         return
             view('templates/header', $data).
             view("pages/form", $data).
