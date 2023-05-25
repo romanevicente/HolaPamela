@@ -85,14 +85,16 @@ class RecommendationsController extends BaseController
         $description = $params['description'];
         $author = $params['author'];
         // $picture = $params['picture'];
-        $category = $params['category'];
-        d($category);
+        $category_id = $params['category'];
+       // d($category);
         $recommendationModel = new RecommendationsModel();
-        $categoriesModel = new CategoriesModel();
-
-        $category_datas = $categoriesModel->where('title', $category)->findAll();
-        $category_id = $category_datas[0];
-    //    $category_id = $category_datas[0]['id'];
+        
+        // $categoriesModel = new CategoriesModel();
+        // $category_datas = $categoriesModel->where('title', $category)->find();
+        // $category_id = $category_datas['id'];
+        // $data = [
+        //     "categoriesList" => $categoriesList
+        // ];
 
         $newRecommendation = [
             'title' => $title,

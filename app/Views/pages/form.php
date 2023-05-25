@@ -7,7 +7,7 @@
 
 <h2>Partage une nouvelle recommandation</h2>
 
-<div class="container pt-5">
+<div class="container pt-5 form-background ">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
       <form method="post" action="/form" enctype="multipart/form-data" >
@@ -22,7 +22,7 @@
           <select class="form-select" id="category" name="category" required>
             <option selected>Choisissez...</option>
                   <?php foreach($categoriesList as $categorie): ?>
-                <option value="7"><?=$categorie["title"]?></option>
+                <option value="<?=$categorie["id"]?>"><?=$categorie["title"]?></option>
               <?php endforeach ?>
               </select>
         </div>
