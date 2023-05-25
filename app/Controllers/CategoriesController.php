@@ -23,7 +23,7 @@ class CategoriesController extends BaseController
         $data2 = [
             "recommandationList" => $recommandationList
         ];
-        d($recommandationList);
+
         return 
             view('templates/header', $data).
             view("pages/cat", $data2).
