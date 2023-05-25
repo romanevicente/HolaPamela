@@ -14,6 +14,11 @@
 body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   margin: 0;
+  
+}
+
+.content{
+  min-height: 100vh;
 }
 h1, h2, h3 {
   font-family: "Poppins", "sans-serif";
@@ -22,4 +27,35 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.footer {
+  background-color: #FFA533; 
+  padding: 20px; 
+  color: white;
+  height: 228px;
+}
 
+.header {
+  background-color: #FFA533;
+  height: 170px;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.title-header {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.img {
+  border-radius: 10%;
+  height:250px;
+  width:250px;
+}
+
+.span {
+  color: #575757;
+
+}

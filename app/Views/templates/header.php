@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Hola Pamela</title>
   </head>
   <body>
     <!-- <h1>Hola Pamela</h1> -->
+<div class="content">
 
-    <nav class="navbar navbar-light bg-light">
+
+    <nav class="navbar navbar-light header">
       <a class="navbar-brand" href="#">
         <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span style="font-size: 24px;" font-weight: bold;>Hola Pamela</span>
+        <span class="title-header">Hola Pamela</span>
+        <img src="public/pictures/testlogo.png" alt="Logo">
       </a>
     </nav>
 

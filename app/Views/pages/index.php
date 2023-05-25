@@ -9,13 +9,14 @@
                 <?php foreach($recommendationsList as $recommendation): ?>
                     <div class="col"> 
                     <img class="img" src="<?=$recommendation["picture"]?>">  
+                    <br>
                     <span class="recommendation-title" href="#"><?=$recommendation["title"]?></span>
                     <br>
-                    <span class="" href="#"><?=$recommendation["address"]?></span>
+                    <span class="" style="font-weight: bold;" href="#"><?=$recommendation["address"]?></span>
                     <br>
                     <span class="" href="#"><?=$recommendation["description"]?></span>
                     <br>
-                    <span class="" href="#"><?=$recommendation["author"]?></span>
+                    <span class="" href="#">Auteur : <?=$recommendation["author"]?></span>
                     <br>
                 </div>
    
