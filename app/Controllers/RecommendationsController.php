@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\RecommendationsModel;
 use App\Models\CategoriesModel;
+use Cloudinary\Api\Upload\UploadApi;
 
 class RecommendationsController extends BaseController
 {
@@ -66,22 +67,33 @@ class RecommendationsController extends BaseController
     public function create()
     {
         $params = $this->request->getPost();
+        $picture = $this->request->getFile("picture");
+        d($picture);
+
         $title = $params['title'];
         $address = $params['address'];
         $description = $params['description'];
         $author = $params['author'];
-        $picture = $params['picture'];
+        // $picture = $params['picture'];
         // $category_id = $params['category_id'];
         $recommendationModel = new RecommendationsModel();
-
+            
         $newRecommendation = [
             'title' => $title,
             'address' => $address,
             'description' => $description,
             'author' => $author,
-            'picture' => $picture,
+            // 'picture' => $picture,
             // 'category_id' => $category_id,
         ];
+
+        if ($picture->isValid()) { 	
+            $uploadApi = new UploadApi(); 	
+            $res = $uploadApi->upload($picture->getTempName(), ['folder' => 'upload']); 	 	
+            $url = $res["secure_url"]; 	 	
+            $newRecommendation["picture"] = $url; 	
+        }
+
         $recommendationModel->insert($newRecommendation);
         return redirect('/');
     }
@@ -131,3 +143,5 @@ class RecommendationsController extends BaseController
 
 
 }
+
+
