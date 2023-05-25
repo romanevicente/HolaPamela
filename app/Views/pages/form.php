@@ -10,7 +10,7 @@
 <div class="container pt-5">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
-      <form method="post" action="/form">
+      <form method="post" action="/form" enctype="multipart/form-data" >
 
         <div class="mb-3">
           <label for="title" class="form-label font-title">Titre</label>
@@ -38,8 +38,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="photo" class="form-label">Photo</label>
-          <input type="file" class="form-control" id="photo" name="photo" required>
+          <label for="picture" class="form-label">Photo</label>
+          <input type="file" class="form-control" id="picture" name="picture" required>
         </div>
 
         <div class="mb-3">
