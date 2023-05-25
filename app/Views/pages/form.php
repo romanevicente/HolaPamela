@@ -18,8 +18,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="categorie" class="form-label">Catégorie</label>
-          <select class="form-select" id="categorie" name="categorie" required>
+          <label for="category" class="form-label">Catégorie</label>
+          <select class="form-select" id="category" name="category" required>
             <option selected>Choisissez...</option>
                   <?php foreach($categoriesList as $categorie): ?>
                 <option value="7"><?=$categorie["title"]?></option>

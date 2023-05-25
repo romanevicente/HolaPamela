@@ -16,15 +16,14 @@ class CategoriesController extends BaseController
         $data = [
             "categoriesList" => $categoriesList
         ];
-
+       
         $recommendationsModel = new RecommendationsModel();
-        $recommandationList = $recommendationsModel->where('category_id', $id)
-                                                   ->findAll();
-
+        $recommandationList = $recommendationsModel->where('category_id', $id)->findAll();
+                                                   
         $data2 = [
             "recommandationList" => $recommandationList
         ];
-
+        d($recommandationList);
         return 
             view('templates/header', $data).
             view("pages/cat", $data2).
