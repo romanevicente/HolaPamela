@@ -3,7 +3,7 @@
 }
 
 .form-background {
-    background-image: url('/public/pictures/background-form.jpg/');
+    background-image: url('/public/pictures/background-form.jpg');
     /* background-image: url("https://assets.codepen.io/6093409/sprocket.svg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
