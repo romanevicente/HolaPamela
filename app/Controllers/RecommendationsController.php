@@ -57,6 +57,7 @@ class RecommendationsController extends BaseController
         //     "recommendationList" => $recommendationList
         // ];
 
+
         return
             view('templates/header', $data).
             view("pages/form", $data).
@@ -129,5 +130,9 @@ class RecommendationsController extends BaseController
         return redirect("recommendations");
     }
 
-
-}
+/*     public function form() {
+        $this->load->helper('/public/pictures/background-form.jpg/');
+        $this->load->view('/form');
+        } */
+      
+      }

@@ -13,7 +13,7 @@
       <form method="post" action="/form">
 
         <div class="mb-3">
-          <label for="title" class="form-label">Titre</label>
+          <label for="title" class="form-label font-title">Titre</label>
           <input type="text" class="form-control" id="title" name="title" required>
         </div>
 
