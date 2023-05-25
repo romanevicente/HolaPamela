@@ -22,4 +22,13 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.img {
+  border-radius: 10%;
+  height:250px;
+  width:250px;
+}
 
+.span {
+  color: #575757;
+
+}
