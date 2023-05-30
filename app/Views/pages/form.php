@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Partage une nouvelle recommandation</title>
+  <title></title>
 </head>
 <body>
 
-<h2>Partage une nouvelle recommandation</h2>
+
 
 <div class="container pt-5 form-background img-background">
+  <h1 style="text-align: center;">Partage une nouvelle recommandation</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
       <form method="post" action="/form" enctype="multipart/form-data" >
@@ -47,7 +48,9 @@
           <input type="text" class="form-control" id="author" name="author" required>
         </div>
 
+      <div style="text-align: center;">
         <button type="submit" class="btn-hp">Je partage</button>
+      </div>
         
         
       </form>
