@@ -21,9 +21,17 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-hp color-navbar">
+=======
+=======
+>>>>>>> 8284263fd903f51a93cf5e5a3dd5c6c236f76274
 
 
   <nav class="navbar navbar-expand-lg navbar-light .bg-light-hp color-navbar">
+>>>>>>> 8284263fd903f51a93cf5e5a3dd5c6c236f76274
     <!-- <a class="navbar-brand" href="#">Catégories</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,10 +49,22 @@
             </li>
         <?php endforeach ?>
       </ul>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <li class="nav-item ml-auto" >
+        <a class="btn-navbar" href="/form" role="button">J'ai une recommandation</a>
+      </li> 
+=======
+=======
+>>>>>>> 8284263fd903f51a93cf5e5a3dd5c6c236f76274
       <!-- <li class="nav-item ml-auto" > -->
         <div class="right">
           <a class="btn-hp" href="/form" role="button">J'ai une recommandation</a>
         </div>
       <!-- </li>  -->
+<<<<<<< HEAD
+>>>>>>> 8284263fd903f51a93cf5e5a3dd5c6c236f76274
+=======
+>>>>>>> 8284263fd903f51a93cf5e5a3dd5c6c236f76274
     </div>
   </nav>
