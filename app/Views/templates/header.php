@@ -12,19 +12,17 @@
     <!-- <h1>Hola Pamela</h1> -->
 <div class="content">
 
-
     <nav class="navbar navbar-light header">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand" href="http://localhost:8080/">
         <span class="title-header">Hola Pamela</span>
-        <img src="public/pictures/testlogo.png" alt="Logo">
+        <img class="logo" src="/pictures/testlogo.png" alt="Logo">
       </a>
     </nav>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light .bg-light-hp color-navbar">
     <!-- <a class="navbar-brand" href="#">Catégories</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,7 +32,7 @@
         <?php foreach($categoriesList as $categorie): ?>
             <li class="nav-item" >
               <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?></a> 
-            <img src="/public/pictures/cat<?=$categorie["id"]?>.png" width="30" height="30">
+            <img src="/pictures/categories/cat<?=$categorie["id"]?>.png" width="30" height="30">
             </li>
         <?php endforeach ?>
       </ul>
