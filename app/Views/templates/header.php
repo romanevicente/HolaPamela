@@ -12,12 +12,10 @@
     <!-- <h1>Hola Pamela</h1> -->
 <div class="content">
 
-
     <nav class="navbar navbar-light header">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand" href="http://localhost:8080/">
         <span class="title-header">Hola Pamela</span>
-        <img src="public/pictures/testlogo.png" alt="Logo">
+        <img class="logo" src="/pictures/testlogo.png" alt="Logo">
       </a>
     </nav>
 

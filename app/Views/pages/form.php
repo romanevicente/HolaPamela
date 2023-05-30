@@ -7,7 +7,7 @@
 
 <h2>Partage une nouvelle recommandation</h2>
 
-<div class="container pt-5 form-background ">
+<div class="container pt-5 form-background img-background">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
       <form method="post" action="/form" enctype="multipart/form-data" >
