@@ -11,14 +11,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
   
   .navbar-nav .nav-item img {
     order: -1;
     margin-bottom: 2px;
     margin-top: 5px;
+    margin-right: 5px;
   }
   
   .bg-light {
     --bs-bg-opacity: 1;
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 10px;
 }
