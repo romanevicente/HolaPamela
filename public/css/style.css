@@ -14,7 +14,7 @@
 body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   margin: 0;
-  
+  margin-top: 10%;
 }
 
 .content{
@@ -36,16 +36,18 @@ h1, h2, h3 {
 
 .header {
   background-color: #FFA533;
-  height: 170px;
+  height: 110px;
   color: white !important;
   display: flex;
   align-items: center;
   font-size: 24px;
+
 }
 .title-header {
   color: white;
   font-weight: bold;
   font-size: 30px;
+  padding-left: 20px;
 }
 
 
@@ -58,4 +60,17 @@ h1, h2, h3 {
 .span {
   color: #575757;
 
+}
+
+.container {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding-left: 20px;
+  margin-left:20px;
+}
+
+.logo {
+  max-width: 100%; 
+  max-height: 100%; 
+  height: 50px;
 }
