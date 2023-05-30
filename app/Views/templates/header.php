@@ -22,7 +22,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   
-  <nav class="navbar navbar-expand-lg navbar-light .bg-light-hp color-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-hp color-navbar">
     <!-- <a class="navbar-brand" href="#">Catégories</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
         <?php endforeach ?>
       </ul>
       <li class="nav-item ml-auto" >
-        <a class="btn btn-primary" href="/form" role="button">J'ai une recommandation</a>
+        <a class="btn-navbar" href="/form" role="button">J'ai une recommandation</a>
       </li> 
     </div>
   </nav>
