@@ -47,8 +47,9 @@
           <input type="text" class="form-control" id="author" name="author" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Je partage</button>
-
+        <button type="submit" class="btn-hp">Je partage</button>
+        
+        
       </form>
     </div>
   </div>

@@ -5,6 +5,8 @@
 @import url("components/card.css");
 @import url("components/form.css");
 @import url("components/navbar.css");
+@import url("components/reco.css");
+@import url("components/btn.css");
 
 
 /* --- Layouts --- */
@@ -16,6 +18,7 @@ body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   margin: 0;
   margin-top: 10%;
+  /* font-family: "Segoe UI", Arial, sans-serif; */
 }
 
 .content{

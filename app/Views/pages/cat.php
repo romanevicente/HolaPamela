@@ -8,7 +8,8 @@
       <br>
           <span class="nav-link" href="#"><?=$recommendation["address"]?></span>
           <span class="nav-link" href="#"><?=$recommendation["author"]?></span>  
-          <a href="/recommendations/<?=$recommendation["id"]?>" class="button">Voir plus</a>
+          <br>
+          <a href="/recommendations/<?=$recommendation["id"]?>" class="btn-hp-reco">Voir plus</a>
           </div>
           <?php endforeach ?>
     

@@ -1,24 +1,34 @@
 .navbar-nav {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .color-navbar {
+
+.color-navbar {
     background-color: navajowhite !important;
   }
   
-  .navbar-nav .nav-item {
+.navbar-nav .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
   
-  .navbar-nav .nav-item img {
+.navbar-nav .nav-item img {
     order: -1;
     margin-bottom: 2px;
     margin-top: 5px;
+    margin-right: 5px;
   }
   
-  .bg-light {
+.bg-light-hp {
     --bs-bg-opacity: 1;
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 10px;
 }
