@@ -10,7 +10,7 @@
         <p>Juin 2023</p>
 
         <div style="text-align: left;">
-            <img src="public/pictures/testlogo.png" alt="Logo" width="100">
+            <img class="logo" src="/pictures/testlogo.png" alt="Logo" width="100">
         </div>
     </div>
   
