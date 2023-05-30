@@ -13,9 +13,7 @@
         <p>© Romane, Ines et Marion</p>
         <p>Juin 2023</p>
 
-        <div style="text-align: left;">
-            <img class="logo" src="/pictures/testlogo.png" alt="Logo" width="100">
-        </div>
+
     </div>
   
 
