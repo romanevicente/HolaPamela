@@ -4,7 +4,6 @@
 
 <div class="row">
     <div class="col">
-    <span class="title-footer">Hola Pamela</span>
         <img class="logo" src="/pictures/testlogo.png" alt="Logo">
     </div>
     <div class="col" style="text-align: center;">
