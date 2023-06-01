@@ -3,11 +3,11 @@
 <head>
   <title></title>
 </head>
-<body>
+<body class="form-background img-background">
 
 
-<div class="content-bg-form">
-  <div class="container pt-5 form-background img-background">
+<!-- <div class="content-bg-form"> -->
+  <div class=" pt-5">
     <h1 style="text-align: center;">Partage une nouvelle recommandation</h1>
     <div class="row justify-content-center">
       <div class="col-12 col-md-6">
@@ -55,7 +55,7 @@
         
         </form>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
 

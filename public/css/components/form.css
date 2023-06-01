@@ -2,7 +2,7 @@
     resize: vertical;
 }
 
-.content-bg-form {
+.pt-5 {
     background-image: url('/pictures/background-form.jpg');
     /* background-image: url("https://assets.codepen.io/6093409/sprocket.svg"); */
     background-repeat: no-repeat;
@@ -11,8 +11,5 @@
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     color:white;
-<<<<<<< HEAD
-    border-radius:  2%;
-=======
->>>>>>> 4c801cf5bae19e4f896baf9743e89861a327d537
 }
+
