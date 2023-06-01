@@ -43,8 +43,6 @@ class RecommendationsController extends BaseController
             "picture" => $recommendation[0]["picture"]
         ];
 
-
-
         return view('templates/header', $data).
                view("pages/recommendation", $data2).
                view('templates/footer');
@@ -157,6 +155,42 @@ class RecommendationsController extends BaseController
         $recommendationModel->delete($id);
 
         return redirect("recommendations");
+    }
+
+    public function search(){
+
+        $categoriesModel = new CategoriesModel();
+        $categoriesList = $categoriesModel->findAll();
+
+        $data = [
+            "categoriesList" => $categoriesList
+        ];
+
+        $searchText = $this->request->getGet("searchText");
+
+        // $recommendationsModel = new RecommendationsModel();
+        // $recommendation = $recommendationsModel->find($id);
+        // $db = \Config\Database::connect();
+        // $builder = $db->table('recommendations');
+        // $builder->select('id');
+        // $builder->like('title', $searchText);
+        // $recommendation = $builder->get()->getResultArray();
+
+        // $data2 = [
+        //     "id" => $id
+        // ];
+
+        $recommendationsModel = new RecommendationsModel();
+        $recommandationListSearch = $recommendationsModel->like('title', $searchText)
+                                                          ->findAll();
+
+        $data2 = [
+            "recommandationListSearch" => $recommandationListSearch
+        ];
+
+        return view('templates/header', $data).
+        view("pages/search", $data2).
+        view('templates/footer');
     }
 
 

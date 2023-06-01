@@ -49,7 +49,7 @@
         </div>
 
       <div style="text-align: center;">
-        <button type="submit" class="btn-hp">Je partage</button>
+        <button type="submit" class="btn-hp" href="/form">Je partage</button>
       </div>
         
         

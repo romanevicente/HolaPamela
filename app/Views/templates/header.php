@@ -27,29 +27,46 @@
 
 
     <!-- <a class="navbar-brand" href="#">Catégories</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ">
-        <?php foreach($categoriesList as $categorie): ?>
-            <li class="nav-item" >
-              
-              <a href="/cat/<?=$categorie["id"]?>">
-               <img src="/pictures/categories/cat<?=$categorie["id"]?>.png" width="30" height="30">
-              </a>
-              <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?> </a>
+    </button> -->
+
+
+    <div class="row w-100">
+      <div class="col">
         
-            </li>
-        <?php endforeach ?>
-      </ul>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <?php foreach($categoriesList as $categorie): ?>
+                  <li class="nav-item" >
+                    
+                    <a href="/cat/<?=$categorie["id"]?>">
+                    <img src="/pictures/categories/cat<?=$categorie["id"]?>.png" width="30" height="30">
+                    </a>
+                    <a class="nav-link" href="/cat/<?=$categorie["id"]?>"><?=$categorie["title"]?> </a>
+              
+                  </li>
+              <?php endforeach ?>
+            </ul>
+          </div>
+      </div>
 
+      <div class="col right" style="margin-top: 24px;">
+        <div class="row-hp">
+          <div class="col">
+            <form class="form-inline input-group row-hp" method="get" action="/search" >
+              <input class="form-control" name="searchText" type="search" placeholder="Search" style="height: 40px;" aria-label="Search">
+              <button class="btn-hp-reco" type="submit" style="border:none; font-size: 18px;">Search</button>
+            </form>
+          </div>
+          <div class="col">
+            <a class="btn-hp" href="/form" role="button" style="margin-left: 30px;">J'ai une recommandation</a>
+          </div>
 
-      <!-- <li class="nav-item ml-auto" > -->
-        <div class="right">
-          <a class="btn-hp" href="/form" role="button">J'ai une recommandation</a>
         </div>
-      <!-- </li>  -->
-
     </div>
+  </div>
+
+
+   
   </nav>

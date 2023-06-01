@@ -6,8 +6,8 @@
         <img class="img" src="<?=$recommendation["picture"]?>">  
         <span class="recommendation-title" href="#"><?=$recommendation["title"]?></span>
       <br>
-          <span class="nav-link" href="#"><?=$recommendation["address"]?></span>
-          <span class="nav-link" href="#"><?=$recommendation["author"]?></span>  
+          <span style="font-style: italic;" class="nav-link" href="#"><?=$recommendation["address"]?></span>
+          <span class="nav-link" href="#">Auteur : <?=$recommendation["author"]?></span>  
           <br>
           <a href="/recommendations/<?=$recommendation["id"]?>" class="btn-hp-reco">Voir plus</a>
           </div>
