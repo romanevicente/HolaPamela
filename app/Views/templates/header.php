@@ -14,7 +14,6 @@
 
     <nav class="navbar navbar-light header">
       <a class="navbar-brand" href="http://localhost:8080/">
-        <span class="title-header">Hola Pamela</span>
         <img class="logo" src="/pictures/testlogo.png" alt="Logo">
       </a>
     </nav>
