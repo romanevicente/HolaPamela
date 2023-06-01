@@ -1,6 +1,7 @@
       <div class="">  
         <div class="container">
-        <h3>Vous pourriez aimer...</h3>
+        <span style="font-size: 23px;">Pamela vous recommande...</span>
+        <br>
         <br>
             <div class="row row-cols-4">
                 <?php foreach($recommendationsList as $recommendation): ?>
