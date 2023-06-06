@@ -13,7 +13,7 @@
 <div class="content">
 
     <nav class="navbar navbar-light header">
-      <a class="navbar-brand" href="http://localhost:8080/">
+      <a class="navbar-brand" href="/">
         <img class="logo" src="/pictures/testlogo.png" alt="Logo">
       </a>
     </nav>
