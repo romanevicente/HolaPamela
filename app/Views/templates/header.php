@@ -50,15 +50,15 @@
           </div>
       </div>
 
-      <div class="col right" style="margin-top: 24px;">
+      <div class="col right" >
         <div class="row-hp">
-          <div class="col">
+          <div class="col"  style="margin-top: 18px;">
             <form class="form-inline input-group row-hp" method="get" action="/search" >
               <input class="form-control" name="searchText" type="search" placeholder="Rechercher" style="height: 40px;" aria-label="Rechercher">
               <button class="btn-hp-reco" type="submit" style="border:none; font-size: 18px;">Rechercher</button>
             </form>
           </div>
-          <div class="col">
+          <div class="col" style="margin-top: 23px;">
             <a class="btn-hp" href="/form" role="button" style="margin-left: 30px;">J'ai une recommandation</a>
           </div>
 
