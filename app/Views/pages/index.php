@@ -3,7 +3,7 @@
         <span style="font-size: 23px;">Pamela vous recommande...</span>
         <br>
         <br>
-            <div class="row row-cols-4">
+            <div class="row row-cols-4 ">
                 <?php foreach($recommendationsList as $recommendation): ?>
                     <div class="col"> 
                     <a href="/recommendations/<?=$recommendation["id"]?>" >
