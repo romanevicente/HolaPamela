@@ -54,7 +54,7 @@
         <div class="row-hp">
           <div class="col">
             <form class="form-inline input-group row-hp" method="get" action="/search" >
-              <input class="form-control" name="searchText" type="search" placeholder="Search" style="height: 40px;" aria-label="Rechercher">
+              <input class="form-control" name="searchText" type="search" placeholder="Rechercher" style="height: 40px;" aria-label="Rechercher">
               <button class="btn-hp-reco" type="submit" style="border:none; font-size: 18px;">Rechercher</button>
             </form>
           </div>
