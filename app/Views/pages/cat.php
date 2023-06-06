@@ -12,6 +12,7 @@
           <a href="/recommendations/<?=$recommendation["id"]?>" class="btn-hp-reco">Voir plus</a>
           </div>
           <?php endforeach ?>
-    
+      <br>
+      <br>
   </div>
 </div>

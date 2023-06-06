@@ -17,6 +17,7 @@ class Home extends BaseController
         $recommendationsModel = new RecommendationsModel();
         $recommendationsList = $recommendationsModel->orderBy('id', 'desc')
                                                     ->limit(5)
+                                                    ->where('id !=', 45)
                                                     ->findAll();
 
         $data = [
