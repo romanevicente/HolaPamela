@@ -16,6 +16,7 @@
                     <br>
                     <span class="" href="#">Auteur : <?=$recommendation["author"]?></span>
                     <br>
+                    <br>
                     </div>   
                 <?php endforeach ?>
               
