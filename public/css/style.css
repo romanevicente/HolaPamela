@@ -57,6 +57,7 @@ h1, h2, h3, p {
   border-radius: 10%;
   height:250px;
   width:250px;
+  margin-top: 20px;
 }
 
 .span {
